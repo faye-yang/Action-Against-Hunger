@@ -1,0 +1,25 @@
+<div>
+  <table class="table table-bordered">
+      <thead>
+      <tr style="font-size:1.5rem">
+        <th scope="col">Message</th>
+        <th scope="col">Date</th>
+        <th scope="col">Post Link</th>
+      </tr>
+
+      <tr *ngFor="let cm of comments, let i = index">
+        <th>{{cm.content}}</th>
+        <th>{{cm.dateCreated._seconds * 1000 | date:'MM-dd-yyyy' }}</th>
+        <th>
+          <div class="wrapper">
+            <span class="square individual">
+              <a class="ninth before after"(click)="checkAndRedirect( cm.postId , i )" [ngStyle]="{'color':notificationViewList[i] ? 'blue' : 'gray' }">View it</a>
+            </span>
+          </div>
+        </th>
+      </tr>
+      </thead>
+
+  </table>
+
+</div>
