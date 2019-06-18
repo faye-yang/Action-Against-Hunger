@@ -53,8 +53,9 @@ Professionals, selected by the organization, from different food sectors (dietit
 The application has already deployed on Heroku with the following url
 https://action-against-hunger-backend.herokuapp.com
 
-
-
+Account:
+-create teacher account.
+-create student account.
 As **admin**: you can invite teacher and guest
 Steps:
 1. Enter admin username and password: admin / admin123
